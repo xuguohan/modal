@@ -1,0 +1,44 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" type="text/css" href="css/modal.css">
+		<script type="text/javascript" src='js/modal.js'>
+			
+		</script>
+
+	</head>
+	<body>
+		
+		<div id="contartner">
+			<h1>this is a demo</h1>
+		</div>
+		<script type="text/javascript">
+			var obj = {
+				"name":'xgh',
+				"getName":function(){
+					alert(this.name);
+				},
+				"openPopView":function(){
+					var self = this;
+					var modal = new Modal();
+					modal.init({
+						title:'标题',
+						text:'这是一个小例子',
+						isMask:true,
+						okBtnCallback:function(){
+							self.getName();
+						}
+						
+					});
+				}
+			}
+			obj.openPopView();
+			
+			
+
+
+			
+		</script>
+	</body>
+</html>
