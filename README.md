@@ -14,7 +14,7 @@
 ```
         title:'',   //modal标题
         text:'',   //modal内容
-        isMask:true, //是否需要遮罩
+        hasMask:true, //是否需要遮罩
         hasFoot:true, //是否需要foot（确定，取消按钮）
         hasCancelBtn:true, //是否需要删除按钮
         okButText:'确定', // ok按钮名
@@ -27,7 +27,7 @@ var modal = new Modal();
 modal.init({
        title:'标题',
        text:'这是一个小例子',
-       isMask:true,
+       hasMask:true,
        okBtnCallback:function(){}
 });
 ```

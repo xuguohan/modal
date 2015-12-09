@@ -1,6 +1,6 @@
 (function(root,factory){
 	if(typeof define==='function' && define.amd){
-		define(['$'],factory)
+		define([],factory)
 	}else if(typeof exports === 'object'){
 		module.exports = factory();
 	}else{
@@ -10,7 +10,7 @@
 	var defaults = {
 		title:'',
 		text:'',
-		isMask:true, //是否需要遮罩
+		hasMask:true, //是否需要遮罩
 		hasFoot:true, //是否需要foot
 		hasCancelBtn:true,
 		okButText:'确定',
@@ -57,7 +57,7 @@
 	
 	
 	function setTemplate(obj){
-		var maskHtml = obj.isMask?'<div class="modal-msk"></div>':'',
+		var maskHtml = obj.hasMask?'<div class="modal-msk"></div>':'',
 			html= '',
 			keys = {
 				title: titleTemplate,
