@@ -23,11 +23,12 @@
 ```
 二、使用
 ```
-var modal = new Modal();
-modal.init({
-       title:'标题',
-       text:'这是一个小例子',
-       hasMask:true,
-       okBtnCallback:function(){}
+var modal = new Modal({
+        title:'标题',
+        text:'这是一个小例子',
+        isMask:true,
+        okBtnCallback:function(){
+          obj.getName();
+        }
 });
 ```
